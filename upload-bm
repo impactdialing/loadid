@@ -1,12 +1,13 @@
 #!/bin/sh
 
 TESTID=$1
+PATTERN=$2
 FILEPATH=/Users/jh/projects/loadid/Dials
 KEY=b6b03d0f85617ab8f046
 
-for FILE in $FILEPATH/*.{csv,jmx}; do
+for FILE in $FILEPATH/$PATTERN; do
   echo "Uploading: $FILE"
-  curl -X POST -F "file=@$FILE" -H "x-api-key: $KEY" https://a.blazemeter.com:443/api/latest/tests/$TESTID/files
+  curl -w "%{http_code}" -X POST -F "file=@$FILE" -H "x-api-key: $KEY" https://a.blazemeter.com:443/api/latest/tests/$TESTID/files
 done
 
 echo "Done!"

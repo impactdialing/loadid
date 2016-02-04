@@ -1,3 +1,5 @@
 heroku ps:scale web=1:1X app_health=0 billing=0 call_flow=0 clock=0 dial_queue=0 dialer_loop=0 dialer_worker=0 general=0 import=0 persist_worker=0 persistence=0 reports=0 simulator_loop=0 simulator_worker=0 twilio_stats=0 -a impactdialing-staging
 
 heroku ps:scale web=0:1X -a impactdialing-twiml-staging
+
+heroku ps:scale web=0 -a twilid
