@@ -1,0 +1,16 @@
+heroku config:set DATABASE_READ_SLAVE1_URL=mysql2://root:VeYx42NVRVsJMuG@impactdialing-staging.cjo94dhm4pos.us-east-1.rds.amazonaws.com/staging?reconnect=true \
+DATABASE_READ_SLAVE2_URL=mysql2://root:VeYx42NVRVsJMuG@impactdialing-staging.cjo94dhm4pos.us-east-1.rds.amazonaws.com/staging?reconnect=true \
+DATABASE_SIMULATOR_SLAVE_URL=mysql2://root:VeYx42NVRVsJMuG@impactdialing-staging.cjo94dhm4pos.us-east-1.rds.amazonaws.com/staging?reconnect=true \
+DATABASE_URL=mysql2://root:VeYx42NVRVsJMuG@impactdialing-staging.cjo94dhm4pos.us-east-1.rds.amazonaws.com/staging?reconnect=true \
+REDIS_URL=redis://:uQkKN4srGxhfQZGG8Cfb@pub-redis-10433.us-east-1-3.3.ec2.garantiadata.com:10433 \
+VOIP_API_URL=api.twilio.com \
+-a impactdialing-staging
+
+
+heroku config:set DATABASE_READ_SLAVE1_URL=mysql2://root:VeYx42NVRVsJMuG@impactdialing-staging.cjo94dhm4pos.us-east-1.rds.amazonaws.com/staging?reconnect=true \
+DATABASE_READ_SLAVE2_URL=mysql2://root:VeYx42NVRVsJMuG@impactdialing-staging.cjo94dhm4pos.us-east-1.rds.amazonaws.com/staging?reconnect=true \
+DATABASE_SIMULATOR_SLAVE_URL=mysql2://root:VeYx42NVRVsJMuG@impactdialing-staging.cjo94dhm4pos.us-east-1.rds.amazonaws.com/staging?reconnect=true \
+DATABASE_URL=mysql2://root:VeYx42NVRVsJMuG@impactdialing-staging.cjo94dhm4pos.us-east-1.rds.amazonaws.com/staging?reconnect=true \
+REDIS_URL=redis://:uQkKN4srGxhfQZGG8Cfb@pub-redis-10433.us-east-1-3.3.ec2.garantiadata.com:10433 \
+VOIP_API_URL=api.twilio.com \
+-a impactdialing-twiml-staging

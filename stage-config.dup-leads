@@ -1,0 +1,8 @@
+heroku config:set REDIS_URL=redis://:EGvM4MAlRGAjZOjVzIPWLsGdvhiVjFLZtLju@pub-redis-17217.us-east-mz.1.ec2.garantiadata.com:17217 \
+DATABASE_URL=mysql2://root:pfsdh37sl203jq@duplicate-leads.cjo94dhm4pos.us-east-1.rds.amazonaws.com/heroku_production?reconnect=true \
+DATABASE_READ_SLAVE1_URL=mysql2://root:pfsdh37sl203jq@duplicate-leads.cjo94dhm4pos.us-east-1.rds.amazonaws.com/heroku_production?reconnect=true \
+DATABASE_READ_SLAVE2_URL=mysql2://root:pfsdh37sl203jq@duplicate-leads.cjo94dhm4pos.us-east-1.rds.amazonaws.com/heroku_production?reconnect=true \
+DATABASE_SIMULATOR_SLAVE_URL=mysql2://root:pfsdh37sl203jq@duplicate-leads.cjo94dhm4pos.us-east-1.rds.amazonaws.com/heroku_production?reconnect=true \
+VOIP_API_URL=twilid.herokuapp.com \
+-a impactdialing-staging
+

@@ -1,0 +1,6 @@
+#!/bin/sh
+
+BASE=/Users/jh/projects
+SRC=$BASE/Impact-Dialing/tmp/perf_fixtures
+cp $SRC/dials*.csv $BASE/twilid/data
+cp $SRC/*.csv $BASE/loadid/Dials
